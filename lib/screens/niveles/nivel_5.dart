@@ -1,177 +1,201 @@
 import 'package:flutter/material.dart';
 
-class Nivel4Page extends StatefulWidget {
-  const Nivel4Page({super.key});
+class Nivel5Page extends StatefulWidget {
+  const Nivel5Page({super.key});
 
   @override
-  State<Nivel4Page> createState() => _Nivel4PageState();
+  State<Nivel5Page> createState() => _Nivel5PageState();
 }
 
-class _Nivel4PageState extends State<Nivel4Page> {
+class _Nivel5PageState extends State<Nivel5Page> {
   final List<Map<String, dynamic>> preguntas = [
     {
-  "pregunta":"¿Cuál es la bacteria responsable de la Peste Negra?",
+  "pregunta":
+      "¿Qué tipo de enfermedad es la rabia?",
   "opciones": [
-    "Yersinia pestis",
-    "Escherichia coli",
-    "Bacillus anthracis",
-    "Staphylococcus aureus",
+    "Bacteriana",
+    "Viral",
+    "Fúngica",
+    "Parasitaria",
   ],
-  "respuesta": "Yersinia pestis",
+  "respuesta": "Viral",
 },
 {
   "pregunta":
-      "¿Dónde se encontró la primera evidencia histórica de la Peste Negra?",
+      "¿Qué sistema del cuerpo afecta principalmente la rabia?",
   "opciones": [
-    "Asia Central",
-    "España",
-    "América del Norte",
-    "Australia",
+    "Digestivo",
+    "Respiratorio",
+    "Nervioso",
+    "Circulatorio",
   ],
-  "respuesta": "Asia Central",
+  "respuesta": "Nervioso",
 },
 {
   "pregunta":
-      "¿En qué siglo ocurrió la gran pandemia conocida como Peste Negra?",
+      "¿Qué animal es el principal transmisor de la rabia en zonas urbanas?",
   "opciones": [
-    "Siglo XIV",
-    "Siglo X",
-    "Siglo XVII",
-    "Siglo XX",
+    "Perro",
+    "Caballo",
+    "Gallina",
+    "Conejo",
   ],
-  "respuesta": "Siglo XIV",
+  "respuesta": "Perro",
 },
 {
   "pregunta":
-      "¿Cuál fue uno de los principales medios de transmisión de la enfermedad?",
+      "¿Qué animales suelen transmitir rabia en zonas silvestres?",
   "opciones": [
-    "Pulgas infectadas",
-    "Mosquitos",
-    "Agua contaminada",
-    "Plantas venenosas",
+    "Mariposas",
+    "Peces",
+    "Tortugas",
+    "Murciélagos",
   ],
-  "respuesta": "Pulgas infectadas",
+  "respuesta": "Murciélagos",
 },
 {
   "pregunta":
-      "¿Qué animal fue clave en la propagación de la peste durante la Edad Media?",
+      "¿Cómo se transmite normalmente la rabia?",
   "opciones": [
-    "Ratas",
-    "Caballos",
-    "Perros",
-    "Palomas",
+     "Por el aire",
+    "Por el agua",
+   "Por la saliva de animales infectados",
+    "Por alimentos contaminados",
   ],
-  "respuesta": "Ratas",
+  "respuesta": "Por la saliva de animales infectados",
 },
 {
   "pregunta":
-      "¿Qué forma de peste puede transmitirse entre personas mediante gotículas respiratorias?",
+      "¿Cuál es la forma más común de contagio?",
   "opciones": [
-    "Peste neumónica",
-    "Peste bubónica",
-    "Peste septicémica",
-    "Peste intestinal",
+    "Toser",
+    "Estornudos",
+    "Picaduras de mosquito",
+    "Mordeduras",
   ],
-  "respuesta": "Peste neumónica",
+  "respuesta": "Mordeduras",
 },
 {
   "pregunta":
-      "¿Cuál era uno de los síntomas más característicos de la peste bubónica?",
+      "¿Cuanto tiempo tarda en aparecer los sintomas?",
   "opciones": [
-    "Inflamación dolorosa de ganglios",
-    "Pérdida de cabello",
-    "Sordera temporal",
-    "Ceguera permanente",
+    "2 a 8 minutos",
+    "2 a 8 horas",
+    "2 a 8 dias",
+    "2 a 8 semanas",
   ],
-  "respuesta": "Inflamación dolorosa de ganglios",
+  "respuesta": "2 a 8 semanas",
 },
 {
   "pregunta":
-      "¿Cómo se llaman los ganglios inflamados característicos de esta enfermedad?",
+      "¿Qué órgano es finalmente afectado por el virus causando los síntomas más graves?",
   "opciones": [
-    "Bubones",
-    "Pústulas",
-    "Nódulos",
-    "Abscesos",
+    "Riñón",
+    "Cerebro",
+    "Pulmón",
+    "Corazón",
   ],
-  "respuesta": "Bubones",
+  "respuesta": "Cerebro",
 },
 {
   "pregunta":
-      "Además de los bubones, ¿qué otro síntoma era frecuente?",
+      "¿Cuál es uno de los primeros síntomas de la rabia?",
   "opciones": [
-    "Fiebre alta",
-    "Fracturas óseas",
-    "Pérdida de memoria",
-    "Aumento de apetito",
+   "Hemorragias",
+    "Parálisis inmediata",
+    "Ceguera",
+     "Fiebre y malestar general",
   ],
-  "respuesta": "Fiebre alta",
+  "respuesta": "Fiebre y malestar general",
 },
 {
   "pregunta":
-      "¿Qué sistema del cuerpo suele verse afectado primero por la bacteria?",
-  "opciones": [
-    "Sistema linfático",
-    "Sistema óseo",
-    "Sistema reproductor",
-    "Sistema endocrino",
-  ],
-  "respuesta": "Sistema linfático",
-},
-{
-  "pregunta":
-      "¿Qué podía ocurrir si la enfermedad no recibe tratamiento?",
-  "opciones": [
-    "Septicemia",
-    "Muerte cerebral",
-    "Solo dolor muscular",
-    "Pérdida del gusto",
-  ],
-  "respuesta": "Septicemia",
-},
-{
-  "pregunta":
-      "¿Cómo se trata actualmente la peste si se detecta a tiempo?",
-  "opciones": [
-    "Con antibióticos",
-    "Con vacunas únicamente",
-    "Con cirugía",
-    "Con vitaminas",
-  ],
-  "respuesta": "Con antibióticos",
-},
-{
-  "pregunta":
-      "En italia barcos y personas de Asia tenian que esperar 40 dias que italiano significa Quaranta giorni que con el tiempo luego se llamaria...",
-  "opciones": [
-    "Cuarentena",
-    "Cancer",
-    "Pandemia",
-    "Brote",
-  ],
-  "respuesta": "La cuarentena",
-},
-{
-  "pregunta":
-      "¿Qué acción ayuda a prevenir nuevos brotes en zonas de riesgo?",
-  "opciones": [
-    "Control de roedores y pulgas",
-    "Evitar los vegetales",
-    "Reducir la actividad física",
-    "Consumir más proteínas",
-  ],
-  "respuesta": "Control de roedores y pulgas",
-},
-{
-  "pregunta":
-      "¿La peste negra sigue existiendo en algunos lugares del mundo actualmente?",
-  "opciones": [
-    "Verdadero",
-    "Falso",
-  ],
-  "respuesta": "Verdadero",
-},
+      "¿Qué sensación puede aparecer alrededor de la mordedura?",
+  "opciones": ["Cambio de color de ojos",
+    "Congelamiento",
+    "Hormigueo o picazón",
+    "Pérdida de hueso",
     
+  ],
+  "respuesta": "Hormigueo o picazón",
+},
+{
+  "pregunta":
+      "¿Qué síntoma avanzado da fama a esta enfermedad?",
+  "opciones": [
+    "Miedo al agua",
+    "Pérdida del cabello",
+    "Sordera",
+    "Miopía",
+  ],
+  "respuesta": "Miedo al agua",
+},
+{
+  "pregunta":
+      "¿Cómo se conoce médicamente el miedo al agua causado por la rabia?",
+  "opciones": [
+    "Acrofobia",
+    "Hidrofobia",
+    "Agorafobia",
+    "Aerofobia",
+  ],
+  "respuesta": "Hidrofobia",
+},
+{
+  "pregunta":
+      "¿Qué debe hacerse inmediatamente después de una mordedura sospechosa?",
+  "opciones": [
+    "Lavar la herida",
+    "Cubrirla y esperar",
+    "Aplicar hielo únicamente",
+    "Tomar vitaminas",
+  ],
+  "respuesta": "Lavar la herida",
+},
+{
+  "pregunta":
+      "¿Existe una vacuna para prevenir la rabia?",
+  "opciones": [
+    "Sí",
+    "No",
+    "si",
+    "no",
+  ],
+  "respuesta": "si",
+},
+{
+  "pregunta":
+      "¿Qué tratamiento puede administrarse antes de que aparezcan los síntomas?",
+  "opciones": [
+    "Vacunación",
+    "Cirugía cerebral",
+    "Radioterapia",
+    "Quimioterapia",
+  ],
+  "respuesta": "Vacunación",
+},
+{
+  "pregunta":
+      "¿Qué ocurre generalmente cuando aparecen los síntomas graves y no se recibió tratamiento oportuno?",
+  "opciones": [
+    "Lobotomia",
+    "La persona se recupera sola",
+    "Encefalitis",
+    "Falta de oxigeno",
+  ],
+  "respuesta": "Encefalitis",
+},
+{
+  "pregunta":
+      "Cual es la probabilidad de sobrevivir en etapa clinica",
+  "opciones": [
+    "0%",
+    "25%",
+    "57%",
+    "83%",
+  ],
+  "respuesta": "0%",
+},
 
   ]; 
 

@@ -149,7 +149,7 @@ class _Nivel4PageState extends State<Nivel4Page> {
     "Pandemia",
     "Brote",
   ],
-  "respuesta": "La cuarentena",
+  "respuesta": "cuarentena",
 },
 {
   "pregunta":
