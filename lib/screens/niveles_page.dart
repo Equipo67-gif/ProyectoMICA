@@ -3,6 +3,10 @@ import 'package:main/paleta.dart';
 import 'package:main/screens/niveles/nivel_1.dart';
 import 'package:main/screens/niveles/nivel_2.dart';
 import 'package:main/screens/niveles/nivel_3.dart';
+import 'package:main/screens/niveles/nivel_4.dart';
+import 'package:main/screens/niveles/nivel_5.dart';
+import 'package:main/screens/niveles/nivel_6.dart';
+import 'package:main/screens/niveles/nivel_7.dart';
 
 class NivelesPage extends StatelessWidget {
   const NivelesPage({super.key});
@@ -58,7 +62,39 @@ class NivelesPage extends StatelessWidget {
                           builder: (context) => const Nivel3Page(),
                         ),
                       );
-                    } else {
+                    } else if (index == 3) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel4Page(),
+                          ),
+                        );
+                    }
+                    else if (index == 4) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel5Page(),
+                          ),
+                        );
+                    }
+                    else if (index == 5) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel6Page(),
+                          ),
+                        );
+                    }
+                    else if (index == 6) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel7Page(),
+                          ),
+                        );
+                    }
+                    {
                       debugPrint(
                         "Nivel ${index + 1} aún no disponible",
                       );
