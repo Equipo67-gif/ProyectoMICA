@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Nivel6Page extends StatefulWidget {
-  const Nivel6Page({super.key});
+class Nivel9Page extends StatefulWidget {
+  const Nivel9Page({super.key});
 
   @override
-  State<Nivel6Page> createState() => _Nivel6PageState();
+  State<Nivel9Page> createState() => _Nivel9PageState();
 }
 
-class _Nivel6PageState extends State<Nivel6Page> {
+class _Nivel9PageState extends State<Nivel9Page> {
   final List<Map<String, dynamic>> preguntas = [
    {
   "pregunta":
