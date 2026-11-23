@@ -7,6 +7,8 @@ import 'package:main/screens/niveles/nivel_4.dart';
 import 'package:main/screens/niveles/nivel_5.dart';
 import 'package:main/screens/niveles/nivel_6.dart';
 import 'package:main/screens/niveles/nivel_7.dart';
+import 'package:main/screens/niveles/nivel_8.dart';
+import 'package:main/screens/niveles/nivel_9.dart';
 
 class NivelesPage extends StatelessWidget {
   const NivelesPage({super.key});
@@ -69,28 +71,39 @@ class NivelesPage extends StatelessWidget {
                           builder: (context) => const Nivel4Page(),
                           ),
                         );
-                    }
-                    else if (index == 4) {
+                    } else if (index == 4) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Nivel5Page(),
                           ),
                         );
-                    }
-                    else if (index == 5) {
+                    } else if (index == 5) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Nivel6Page(),
                           ),
                         );
-                    }
-                    else if (index == 6) {
+                    } else if (index == 6) {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => const Nivel7Page(),
+                          ),
+                        );
+                    } else if (index == 7) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel8Page(),
+                          ),
+                        );
+                    } else if (index == 8) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Nivel9Page()
                           ),
                         );
                     }
@@ -105,16 +118,14 @@ class NivelesPage extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: Paleta.botonOscuro,
                     ),
-                    child: Center(
-                      child: Text(
-                        "${index + 1}",
-                        style: TextStyle(
-                          color: Paleta.textoBlanco,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                    child: ClipOval(
+                      child: Image.asset(
+                        "assets/niveles/nivel${index + 1}.png",
+                        fit: BoxFit.cover,
+                        width: 120,
+                        height: 120,
                         ),
                       ),
-                    ),
                   ),
                 );
               }),

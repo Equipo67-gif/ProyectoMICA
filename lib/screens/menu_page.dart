@@ -24,14 +24,6 @@ class MenuPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  "assets/gifs/bacteria.gif",
-                  width: 80,
-                  height: 80,
-                ),
-
-                const SizedBox(width: 15),
-
                 Text(
                   "Biología Emergente",
                   style: TextStyle(
